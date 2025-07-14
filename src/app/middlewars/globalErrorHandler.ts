@@ -16,7 +16,7 @@ export const globalErrorHandlers = (
     if (err instanceof AppError) {
         statusCode = err.statusCode;
         message = err.message;
-    }else if(err instanceof Error){
+    } else if (err instanceof Error) {
         statusCode = 500;
         message = err.message;
     }
